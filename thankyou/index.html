@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>¡Gracias! Thank you for placing an order!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+
+	<script>
+		function getRndInteger(min, max) {
+			return Math.floor(Math.random() * (max - min + 1) ) + min;
+		}
+		var id = getRndInteger(1000001, 9999999999);
+	</script>
+	
+
+
+  </head>
+  <body>
+    <div class="d-flex flex-column justify-content-between h-100">
+      <!-- header-->
+      <header class="header">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="logo header-logo"><a href="#"><img loading="lazy" class="logo__img" src="logo.svg" alt="logo"></a></div>
+            <p class="header__text m-0">Official distributor of <span class="current-product__name">Biolica </span><span class="country"></span></p>
+          </div>
+        </div>
+      </header>
+      <!-- main-->
+      <main class="main">
+        <div class="container">
+          <div class="row">
+            <div class="order__content clearfix">
+              <div class="col-md-6 float-md-left pr-md-2">
+                <div class="order-info__content order-info__content_light_green mb-sm-3 mb-2">
+                  <div class="order-info__info-line">
+                    <div class="d-flex align-items-center"><img loading="lazy" class="order-is-issued__img" src="order_green.svg" alt="order">
+                      <p class="order-info__title m-0">¡Gracias!</p>
+                    </div>
+                  </div>
+                  <p class="order-info__text m-0">Nuestro operador lo llamará pronto desde un número anónimo. Asegúrese de que su teléfono pueda aceptar este tipo de llamadas.</p>
+				  <br/><br/>
+                  <div class="order-info__info-line">
+                    <div class="d-flex align-items-center"><img loading="lazy" class="order-is-issued__img" src="order_green.svg" alt="order">
+                      <p class="order-info__title m-0">Thank you for placing an order!</p>
+                    </div>
+                  </div>
+                  <p class="order-info__text m-0"> <span class="current-product__name font-weight-bold">Biolica</span>&nbsp;product specialist will contact you soon to answer your questions and clarify delivery details.</p>
+                
+				
+                </div>
+              </div>
+              <div class="col-md-6 float-md-right pl-md-2">
+                <div class="order-product__content mb-3">
+                  <div class="order-product__item current-product">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="order-product-spec-wrap">
+                        <p class="order-id">Your order number is <span class="order-id__value">#<script>document.write(id);</script>-ID</span></p>
+                        <p class="current-product__text"><span class="current-product__name">Biolica</span></p>
+                        <p class="current-product__description m-0"><p>weight loose</p></p>
+                      </div><img loading="lazy" class="current-product__img" src="zouh3-1lbaucsaa2jpx-n95y6fq-bsmp39qg1fbxlgj.jpg" alt="product">
+                    </div>
+                  </div>
+                  
+                  <div class="order-product__item product-guarantee">
+                    <div class="d-flex align-items-center"><img loading="lazy" class="label label_img guarantee-label_img" src="guarantee.png" alt="guarantee">
+                      <p class="product-guarantee_text">100% satisfaction guarantee or your money back during 365 days</p>
+                    </div>
+                  </div>
+                  <div class="order-product__item product-confirmed">
+                    <div class="d-flex align-items-center"><img loading="lazy" class="label label_img" src="confirmed.png" alt="confirmed">
+                      <p class="product-confirmed_text">Product safety and effectiveness are clinically confirmed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer-->
+      <footer class="footer">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <div class="company-about__content">
+              <div class="logo footer-logo"><a href="#"><img loading="lazy" class="logo__img" src="logo.svg" alt="logo"></a></div>
+            </div>
+            <div class="footer-contacts__content">
+              <div class="d-flex justify-content-between flex-xl-row flex-column">
+                <p class="footer_address__text m-0">Lazard inc. Grenzacherstrasse 124, floor 9-16 4058 Basel, Switzerland</p>
+                <p class="footer-phone__text m-0">Phone: &nbsp;<a class="footer-phone__link" href="tel:+62215727585">+62 21 5727585</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
